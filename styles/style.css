@@ -79,17 +79,54 @@ nav a {
 
 .Intro {
   width: 100%;
-  height: 1117px;
+  height: 100vh;
 }
 
 .Accroche {
   color: #fff;
-  z-index: 1;
   background-image: url(/IMG/martin-sanchez-pX91vVDV6GQ-unsplash.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 997px;
 }
 .Accroche h1 {
   width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 7rem;
+  padding-bottom: 20px;
+}
+
+.Introbottom {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 30px;
+  width: 100%;
+  height: 100px;
+}
+.Introbottom h2 {
+  grid-column-start: 5;
+  grid-column-end: 10;
+  font-size: 3rem;
+}
+
+.Go {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  width: 200px;
+  height: 70px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  grid-column-start: 11;
+  grid-column-end: 13;
+  font-size: 2rem;
+  margin-top: 20px;
 }
 
 /*About*/
