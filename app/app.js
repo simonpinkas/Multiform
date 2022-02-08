@@ -31,33 +31,27 @@ window.addEventListener("load", () => {
     });
   });
   if (rendererIsLoaded) {
-    createSelect();
+    createSwitcher();
   }
 });
 
-// Create select dropdown
-function createSelect() {
-  // Default sketch
+function createSwitcher() {
   currentSketch = switchSketch(0);
-
-  // Get <select> element from DOM
-  const selectElement = document.getElementById("sketch-select");
-
+  const switcherContainer = document.getElementById("p5-switcher");
   sketches.forEach(function (e, i) {
     // For each sketch in sketches array, create a new option element + text node
     // from name in object. Use index as the value, for use in switch
-    let element = document.createElement("option");
-    let content = document.createTextNode(e.name);
-    element.appendChild(content);
+    let element = document.createElement("div");
+    element.className = "switcher";
+    element.id = e.name.replace(/\s/g, "");
     element.value = i;
-    selectElement.appendChild(element);
+    switcherContainer.appendChild(element);
     if (currentSketch == e) {
       element.selected = true;
     }
-  });
-
-  selectElement.addEventListener("input", function () {
-    currentSketch = switchSketch(this.value);
-    setCanvasTexture();
+    element.addEventListener("click", function () {
+      currentSketch = switchSketch(this.value);
+      setCanvasTexture();
+    });
   });
 }

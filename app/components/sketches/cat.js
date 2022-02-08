@@ -1,4 +1,4 @@
-import { sketches, sketchWidth } from "../sketches";
+import { sketches, sketchWidth, sketchHeight } from "../sketches";
 import catImage from "../../images/cat.jpeg";
 
 const cat = {
@@ -7,7 +7,7 @@ const cat = {
     // Must use sketch object to use p5.js features
     let img;
     sketch.setup = () => {
-      let cnv = sketch.createCanvas(sketchWidth, 400);
+      let cnv = sketch.createCanvas(sketchWidth, sketchHeight);
       sketch.pixelDensity(2);
       cnv.id("drawing-canvas");
       cnv.class("control-target no-hide");
