@@ -1,4 +1,9 @@
-import { sketches, sketchWidth, createControl } from "../sketches";
+import {
+  sketches,
+  sketchWidth,
+  createControl,
+  sketchHeight
+} from "../sketches";
 
 //  Sketch 4
 const randomLines = {
@@ -30,7 +35,7 @@ const randomLines = {
     let lines = [];
 
     sketch.setup = () => {
-      let cnv = sketch.createCanvas(sketchWidth, 400);
+      let cnv = sketch.createCanvas(sketchWidth, sketchHeight);
       sketch.pixelDensity(2);
       cnv.id("drawing-canvas");
       cnv.class("control-target");

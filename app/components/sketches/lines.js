@@ -1,4 +1,9 @@
-import { sketches, sketchWidth, createControl } from "../sketches";
+import {
+  sketches,
+  sketchWidth,
+  sketchHeight,
+  createControl
+} from "../sketches";
 import { hexToRgb } from "../utils";
 
 const lines = {
@@ -8,7 +13,7 @@ const lines = {
     let linesValue, speedValue, backgroundValues, strokeValues;
 
     sketch.setup = () => {
-      let cnv = sketch.createCanvas(sketchWidth, 400);
+      let cnv = sketch.createCanvas(sketchWidth, sketchHeight);
       sketch.pixelDensity(2);
       cnv.id("drawing-canvas");
       cnv.class("control-target no-hide");
