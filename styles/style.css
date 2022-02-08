@@ -8,3 +8,27 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+nav {
+  display: flex;
+  width: 100;
+  height: 120px;
+  position: fixed;
+  z-index: 1;
+}
+
+nav a {
+  margin: 10px;
+}
+.Gotoapp {
+  width: 1vw;
+  height: 70px;
+  padding: 10px;
+}
+
+/*Intro */
+
+.intro {
+  width: 100%;
+  height: 1117px;
+}
