@@ -165,36 +165,46 @@ nav a {
 }
 
 /*Sport*/
-.Sport {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-}
+
+/*Ete*/
 
 .Ete {
-  grid-row: 1;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.T1 {
-}
+/*Hiver*/
 
 .Hiver {
-  grid-row: 2;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.I2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .T2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+/*Autre*/
+
+.disc {
+  height: 250px;
+  text-align: center;
 }
 
 .Autre {
-  grid-row: 3;
-}
-
-.T3 {
-}
-
-.Sport p {
+  height: 100vh;
   display: grid;
-  width: 700px;
-  margin: 25px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .Sport img {
