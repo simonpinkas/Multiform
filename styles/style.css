@@ -1,10 +1,264 @@
-a {
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Nav */
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 30px;
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
   color: #000000;
   font-family: sans-serif;
   font-size: 3rem;
   text-decoration: none;
+  width: 100%;
 }
 
-a:hover {
-  text-decoration: underline;
+.Menu {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+}
+.Menu div {
+  background-color: #000000;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.Gotoapp {
+  height: 40px;
+  padding: 10px;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  background-color: #000000;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Gotoapp a {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.Panier {
+  grid-column-start: 10;
+  grid-column-end: 11;
+}
+
+.Panier img {
+  width: 30%;
+}
+
+.Coeur {
+  grid-column-start: 11;
+  grid-column-end: 12;
+}
+
+.Coeur {
+  width: 30%;
+}
+
+.User {
+  grid-column-start: 12;
+  grid-column-end: 13;
+}
+
+.User {
+  width: 30%;
+}
+
+.Intro {
+  width: 100%;
+  height: 100vh;
+}
+
+.Accroche {
+  color: #fff;
+  background-image: url(/IMG/IMG0.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 997px;
+}
+.Accroche h1 {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 7rem;
+  padding-bottom: 20px;
+}
+
+.Introbottom {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 30px;
+  width: 100%;
+  height: 100px;
+}
+.Introbottom h2 {
+  grid-column-start: 5;
+  grid-column-end: 10;
+  font-size: 3rem;
+}
+
+.Go {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  width: 200px;
+  height: 70px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  grid-column-start: 11;
+  grid-column-end: 13;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+/*About*/
+
+.About {
+  width: 100%;
+  height: 1117px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Pattern {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.Pattern div {
+  background-color: #000000;
+  margin: 50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.Abouttext {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*Path*/
+
+.Path {
+  color: #fff;
+  background-image: url(/IMG/IMG4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 997px;
+}
+
+.Path h1 {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  font-size: 7rem;
+  padding-bottom: 20px;
+}
+
+/*Sport*/
+
+/*Ete*/
+
+.Ete {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.T1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-size: 2rem;
+}
+
+.Ete img {
+  width: 110%;
+  height: auto;
+}
+
+/*Hiver*/
+
+.Hiver {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.T2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+  font-size: 2rem;
+}
+
+.Hiver img {
+  width: 110%;
+  height: auto;
+}
+
+.I2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.T2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+/*Autre*/
+
+.disc {
+  height: 250px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.Autre {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.T3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-size: 2rem;
+}
+
+.Autre img {
+  width: 70%;
+  height: auto;
 }

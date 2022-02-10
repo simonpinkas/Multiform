@@ -3,41 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multiform App</title>
   </head>
   <body>
-    <div id="app">
-      <div class="app-control" id="canvas">
-        <div class="toggle">
-          <img src="images/x.svg" alt="" srcset="" />
-        </div>
+    <header>
+      <a href="/index.html" class="Menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </a>
+      <a href="" class="Panier"><img src="/IMG/caddy.svg" alt="" /></a>
+      <a href="" class="Coeur"><img src="/IMG/heart.svg" alt="" /></a>
+      <a href="" class="User"><img src="/IMG/User.svg" alt="" /></a>
+    </header>
+    <main id="app">
+      <div class="left">
         <div id="p5-container"></div>
+        <div id="p5-switcher"></div>
       </div>
-
-      <div class="app-control" id="sketch">
-        <div class="toggle">
-          <img src="images/x.svg" alt="" srcset="" />
-        </div>
-        <select
-          name=""
-          id="sketch-select"
-          class="control-target"
-        ></select>
-      </div>
-      <div class="app-control" id="sketch-controls">
-        <div class="toggle">
-          <img src="images/x.svg" alt="" srcset="" />
-        </div>
-        <div id="p5-controls" class="control-target"></div>
-      </div>
-      <div id="buy">Add to cart</div>
 
       <canvas id="renderer"> </canvas>
-    </div>
+    </main>
+    <footer>
+      <div id="p5-controls" class="control-target"></div>
+      <!-- </div> -->
+      <div id="buy">Add to cart</div>
+    </footer>
     <script type="module" src="./app.js"></script>
   </body>
 </html>

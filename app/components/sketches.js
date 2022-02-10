@@ -1,6 +1,7 @@
 import p5 from "p5";
 
-export const sketchWidth = 600;
+export const sketchWidth = 400;
+export const sketchHeight = 400;
 
 export let sketches = [];
 
