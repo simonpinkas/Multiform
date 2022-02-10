@@ -1,10 +1,10 @@
-import { sketches, sketchWidth } from "../sketches";
+import { sketches, sketchWidth, sketchHeight } from "../sketches";
 
 const smallEllipses = {
   name: "Small Ellipses",
   sketch: (sketch) => {
     sketch.setup = () => {
-      let cnv = sketch.createCanvas(sketchWidth, 400);
+      let cnv = sketch.createCanvas(sketchWidth, sketchHeight);
       sketch.pixelDensity(2);
       cnv.id("drawing-canvas");
       cnv.class("control-target");
