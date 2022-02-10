@@ -31,6 +31,7 @@ nav a {
   grid-column-start: 1;
   grid-column-end: 3;
   display: flex;
+  margin: 30px;
 }
 .Menu div {
   background-color: #000000;
@@ -41,19 +42,21 @@ nav a {
 }
 
 .Gotoapp {
-  height: 40px;
+  height: 70px;
   padding: 10px;
+  width: 100%;
   grid-column-start: 6;
   grid-column-end: 8;
   background-color: #000000;
-  border-radius: 20px;
+  border-radius: 50px;
   margin: 0 auto;
+  text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .Gotoapp a {
-  font-size: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
   color: #fff;
 }
 
@@ -126,16 +129,21 @@ nav a {
   display: flex;
   width: 200px;
   height: 70px;
-  border-radius: 20px;
+  font-weight: 700;
+  border-radius: 50px;
   justify-content: center;
   align-items: center;
   right: 0;
   grid-column-start: 11;
   grid-column-end: 13;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 20px;
 }
 
+.Go a {
+  text-decoration: none;
+  color: #fff;
+}
 /*About*/
 
 .About {
@@ -261,4 +269,55 @@ nav a {
 .Autre img {
   width: 70%;
   height: auto;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 120px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Footer {
+  width: 100%;
+  display: flex;
+  padding-bottom: 20px;
+  grid-row-start: 2;
+  grid-row-start: 3;
+  grid-column-start: 0;
+  grid-column-start: 7;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Footer h1 {
+  font-size: 1rem;
+}
+.Trybutton {
+  height: 80px;
+  width: 8vw;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+.Trybutton a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+video {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 70%;
+  margin-top: 250px;
 }
