@@ -2,7 +2,6 @@ body {
   margin: 0;
 }
 
-
 a {
   color: #000000;
   font-family: sans-serif;
@@ -14,12 +13,9 @@ a:hover {
   text-decoration: underline;
 }
 
-======= nav {
-
 /* Nav */
 
 nav {
-
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 30px;
@@ -187,7 +183,6 @@ img {
 
 h1 .im1 {
   flex-direction: column;
-=======
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -246,5 +241,4 @@ h1 .im1 {
 .Sport img {
   width: 540px;
   height: 325px;
-
 }
