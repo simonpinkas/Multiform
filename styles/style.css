@@ -2,7 +2,6 @@ body {
   margin: 0;
 }
 
-
 a {
   color: #000000;
   font-family: sans-serif;
@@ -14,12 +13,9 @@ a:hover {
   text-decoration: underline;
 }
 
-======= nav {
-
 /* Nav */
 
 nav {
-
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 30px;
@@ -46,6 +42,7 @@ nav a {
   grid-column-end: 3;
   display: flex;
 }
+
 .Menu div {
   background-color: #000000;
   margin: 5px;
@@ -66,6 +63,7 @@ nav a {
   justify-content: center;
   align-items: center;
 }
+
 .Gotoapp a {
   font-size: 1rem;
   color: #fff;
@@ -113,6 +111,7 @@ nav a {
   background-position: bottom;
   height: 997px;
 }
+
 .Accroche h1 {
   width: 50%;
   position: absolute;
@@ -130,6 +129,7 @@ nav a {
   width: 100%;
   height: 100px;
 }
+
 .Introbottom h2 {
   grid-column-start: 5;
   grid-column-end: 10;
@@ -187,17 +187,18 @@ img {
 
 h1 .im1 {
   flex-direction: column;
-=======
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .Pattern {
   display: flex;
   width: 100%;
   justify-content: center;
 }
+
 .Pattern div {
   background-color: #000000;
   margin: 50px;
@@ -208,43 +209,4 @@ h1 .im1 {
 .Abouttext {
   font-size: 2rem;
   text-align: center;
-}
-
-/*Sport*/
-.Sport {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.Ete {
-  grid-row: 1;
-}
-
-.T1 {
-}
-
-.Hiver {
-  grid-row: 2;
-}
-
-.T2 {
-}
-
-.Autre {
-  grid-row: 3;
-}
-
-.T3 {
-}
-
-.Sport p {
-  display: grid;
-  width: 700px;
-  margin: 25px;
-}
-
-.Sport img {
-  width: 540px;
-  height: 325px;
-
 }
