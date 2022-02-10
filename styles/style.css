@@ -62,27 +62,18 @@ nav a {
 .Panier {
   grid-column-start: 10;
   grid-column-end: 11;
-}
-
-.Panier img {
   width: 30%;
 }
 
 .Coeur {
   grid-column-start: 11;
   grid-column-end: 12;
-}
-
-.Coeur {
   width: 30%;
 }
 
 .User {
   grid-column-start: 12;
   grid-column-end: 13;
-}
-
-.User {
   width: 30%;
 }
 
