@@ -46,10 +46,10 @@ nav a {
   border-radius: 50%;
 }
 
-.Gotoapp {
-  height: 70px;
+.Launch {
+  height: 60px;
   padding: 10px;
-  width: 100%;
+  width: 160px;
   grid-column-start: 6;
   grid-column-end: 8;
   background-color: #000000;
@@ -59,7 +59,7 @@ nav a {
   display: flex;
   align-items: center;
 }
-.Gotoapp a {
+.Launch a {
   font-size: 1.8rem;
   font-weight: 800;
   color: #fff;
@@ -101,10 +101,9 @@ nav a {
 
 .Accroche {
   color: #fff;
-  background-image: url(/IMG/IMG0.png);
+  background-image: url(/IMG/Field_1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
   height: 100%;
 }
 .Accroche h1 {
@@ -112,6 +111,7 @@ nav a {
   bottom: 100px;
   font-size: 8.5rem;
   position: absolute;
+  line-height: 0.9;
 }
 
 .Introbottom {
@@ -133,9 +133,9 @@ nav a {
   background-color: #000000;
   color: #fff;
   display: flex;
-  width: 200px;
+  width: 170px;
   height: 70px;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: 50px;
   justify-content: center;
   align-items: center;
@@ -175,22 +175,24 @@ video {
 
 .Path {
   color: #fff;
-  background-image: url(/IMG/IMG4.png);
+  background-image: url(/IMG/Field_2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
   height: calc(100vh - 120px);
 }
 
 .Path h1 {
-  width: 50%;
   position: absolute;
-  right: 0;
-  font-size: 7rem;
-  padding-bottom: 20px;
+  font-size: 8.5rem;
+  margin: 60px;
+  line-height: 0.9;
 }
 
 /*Sport*/
+
+.Sport h1 {
+  margin: 0;
+}
 
 /*Ete*/
 
@@ -205,10 +207,11 @@ video {
 .T1 {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   font-size: 2rem;
   grid-column-start: 8;
   grid-column-end: 12;
+  line-height: 1.17;
 }
 
 .I1 {
@@ -216,6 +219,7 @@ video {
   grid-column-end: 8;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .I1 img {
@@ -236,10 +240,11 @@ video {
 .T2 {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  font-size: 2rem;
+  justify-content: center;
+  font-size: 2.1rem;
   grid-column-start: 2;
   grid-column-end: 7;
+  line-height: 1.17;
 }
 
 .I2 img {
@@ -252,11 +257,12 @@ video {
   grid-column-end: 13;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /*Autre*/
 
-.I3 {
+.Autres {
   height: calc(100vh - 120px);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -265,18 +271,27 @@ video {
 }
 
 .T3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: 2rem;
   grid-column-start: 8;
   grid-column-end: 12;
+  line-height: 1.17;
 }
 
 .I3 img {
-  width: 60%;
+  width: 55%;
   height: auto;
-  grid-column-start: 2;
+  transform: scaleX(-1);
+}
+
+.I3 {
+  grid-column-start: 1;
   grid-column-end: 8;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /*footer*/
@@ -299,14 +314,14 @@ footer {
   background-color: #fff;
 }
 
-.Footer h1 {
-  font-size: 2rem;
+.Footer h2 {
+  font-size: 3rem;
   color: #000000;
 }
 
 .Trybutton {
   height: 80px;
-  width: 8vw;
+  width: 170px;
   background-color: #000000;
   display: flex;
   justify-content: center;
@@ -316,9 +331,9 @@ footer {
 }
 .Trybutton a {
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .Pattern {
