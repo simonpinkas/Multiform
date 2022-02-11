@@ -21,6 +21,7 @@ nav {
   background-color: #fff;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -34,21 +35,14 @@ nav a {
 .Menu {
   grid-column-start: 1;
   grid-column-end: 3;
-  display: flex;
-  margin: 30px;
-}
-.Menu div {
-  background-color: #000000;
-  margin: 5px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  width: 40%;
+  margin-left: 30px;
 }
 
-.Gotoapp {
-  height: 70px;
+.Launch {
+  height: 60px;
   padding: 10px;
-  width: 100%;
+  width: 160px;
   grid-column-start: 6;
   grid-column-end: 8;
   background-color: #000000;
@@ -58,8 +52,8 @@ nav a {
   display: flex;
   align-items: center;
 }
-.Gotoapp a {
-  font-size: 2rem;
+.Launch a {
+  font-size: 1.8rem;
   font-weight: 800;
   color: #fff;
 }
@@ -70,7 +64,7 @@ nav a {
 }
 
 .Panier img {
-  width: 30%;
+  width: 40%;
 }
 
 .Coeur {
@@ -79,7 +73,7 @@ nav a {
 }
 
 .Coeur {
-  width: 30%;
+  width: 40%;
 }
 
 .User {
@@ -88,20 +82,21 @@ nav a {
 }
 
 .User {
-  width: 30%;
+  width: 40%;
 }
 
+/*Intro*/
 .Intro {
   width: 100%;
   height: calc(100vh - 120px);
+  margin-bottom: 120px;
 }
 
 .Accroche {
   color: #fff;
-  background-image: url(/IMG/IMG0.png);
+  background-image: url(/IMG/Field_1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
   height: 100%;
 }
 .Accroche h1 {
@@ -109,13 +104,14 @@ nav a {
   bottom: 100px;
   font-size: 8.5rem;
   position: absolute;
+  line-height: 0.9;
 }
 
 .Introbottom {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr;
-  column-gap: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fff;
   width: 100%;
   height: 120px;
   background-color: #fff;
@@ -130,45 +126,39 @@ nav a {
   background-color: #000000;
   color: #fff;
   display: flex;
-  width: 200px;
+  width: 170px;
   height: 70px;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  right: 0;
-  grid-column-start: 11;
-  grid-column-end: 13;
   font-size: 1.5rem;
-  margin-top: 20px;
+  margin: 0 60px;
 }
 
 .Go a {
   text-decoration: none;
   color: #fff;
 }
+/*Video*/
+.video {
+  width: 100%;
+  height: 100vh;
+}
+video {
+  width: 100%;
+}
 /*About*/
 
 .About {
   width: 100%;
-  height: 110vh;
+  height: calc(80vh);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 60px 0;
 }
-.Pattern {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.Pattern div {
-  background-color: #000000;
-  margin: 50px;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-}
+
 .Abouttext {
   font-size: 2rem;
   text-align: center;
@@ -178,22 +168,24 @@ nav a {
 
 .Path {
   color: #fff;
-  background-image: url(/IMG/IMG4.png);
+  background-image: url(/IMG/Field_2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
   height: calc(100vh - 120px);
 }
 
 .Path h1 {
-  width: 50%;
   position: absolute;
-  right: 0;
-  font-size: 7rem;
-  padding-bottom: 20px;
+  font-size: 8.5rem;
+  margin: 60px;
+  line-height: 0.9;
 }
 
 /*Sport*/
+
+.Sport h1 {
+  margin: 0;
+}
 
 /*Ete*/
 
@@ -201,25 +193,30 @@ nav a {
   height: calc(100vh - 120px);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  column-gap: 30px;
   padding: 30px;
 }
 
 .T1 {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   font-size: 2rem;
   grid-column-start: 8;
-  grid-column-end: 13;
+  grid-column-end: 12;
+  line-height: 1.17;
 }
 
 .I1 {
   grid-column-start: 1;
-  grid-column-end: 7;
+  grid-column-end: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .I1 img {
-  width: 110%;
+  width: 100%;
   height: auto;
 }
 
@@ -229,48 +226,65 @@ nav a {
   height: calc(100vh - 120px);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  column-gap: 30px;
   padding: 30px;
 }
 
 .T2 {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  font-size: 2rem;
+  justify-content: center;
+  font-size: 2.1rem;
   grid-column-start: 2;
   grid-column-end: 7;
+  line-height: 1.17;
 }
 
 .I2 img {
-  width: 110%;
+  width: 100%;
   height: auto;
 }
 
 .I2 {
-  grid-column-start: 8;
+  grid-column-start: 7;
   grid-column-end: 13;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Autre*/
 
-.Autre {
+.Autres {
   height: calc(100vh - 120px);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  column-gap: 30px;
   padding: 30px;
 }
 
 .T3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: 2rem;
-  grid-column-start: 7;
-  grid-column-end: 13;
+  grid-column-start: 8;
+  grid-column-end: 12;
+  line-height: 1.17;
 }
 
-.Autre img {
-  width: 70%;
+.I3 img {
+  width: 55%;
   height: auto;
-  grid-column-start: 2;
-  grid-column-end: 7;
+  transform: scaleX(-1);
+}
+
+.I3 {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*footer*/
@@ -280,43 +294,51 @@ footer {
   width: 100%;
   height: calc(100vh - 120px);
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  background-color: aliceblue;
 }
 
 .Footer {
   width: 100%;
-  height: 200px;
+  height: 120px;
   display: flex;
-  padding-bottom: 20px;
   justify-content: flex-end;
   align-items: center;
-  background-color: blanchedalmond;
+  background-color: #fff;
 }
 
-.Footer h1 {
-  font-size: 2rem;
-  padding: 10px;
+.Footer h2 {
+  font-size: 3rem;
+  color: #000000;
 }
+
 .Trybutton {
   height: 80px;
-  width: 8vw;
+  width: 170px;
   background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  margin-right: 60px;
-  margin-left: 60px;
+  margin: 0 60px;
 }
 .Trybutton a {
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
-video {
-  width: 40%;
-  margin-top: 250px;
+.Pattern {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
+.Pattern video {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 30px;
 }
