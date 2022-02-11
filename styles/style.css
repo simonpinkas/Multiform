@@ -96,6 +96,7 @@ nav a {
 .Intro {
   width: 100%;
   height: calc(100vh - 120px);
+  margin-bottom: 120px;
 }
 
 .Accroche {
@@ -114,10 +115,10 @@ nav a {
 }
 
 .Introbottom {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr;
-  column-gap: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fff;
   width: 100%;
   height: 120px;
   background-color: #fff;
@@ -138,31 +139,31 @@ nav a {
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  right: 0;
-  grid-column-start: 11;
-  grid-column-end: 13;
   font-size: 1.5rem;
-  margin-top: 20px;
+  margin: 0 60px;
 }
 
 .Go a {
   text-decoration: none;
   color: #fff;
 }
+/*Video*/
+.video {
+  width: 100%;
+  height: 100vh;
+}
+video {
+  width: 80%;
+}
 /*About*/
 
 .About {
   width: 100%;
-  height: calc(100vh - 120px);
+  height: calc(80vh);
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 60px 0;
-}
-
-video {
-  width: 55%;
-  padding-top: 150px;
 }
 
 .Abouttext {
@@ -311,8 +312,7 @@ footer {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  margin-right: 60px;
-  margin-left: 60px;
+  margin: 0 60px;
 }
 .Trybutton a {
   color: #fff;
