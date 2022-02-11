@@ -35,15 +35,8 @@ nav a {
 .Menu {
   grid-column-start: 1;
   grid-column-end: 3;
-  display: flex;
-  margin: 30px;
-}
-.Menu div {
-  background-color: #000000;
-  margin: 5px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  width: 40%;
+  margin-left: 30px;
 }
 
 .Launch {
@@ -71,7 +64,7 @@ nav a {
 }
 
 .Panier img {
-  width: 30%;
+  width: 40%;
 }
 
 .Coeur {
@@ -80,7 +73,7 @@ nav a {
 }
 
 .Coeur {
-  width: 30%;
+  width: 40%;
 }
 
 .User {
@@ -89,7 +82,7 @@ nav a {
 }
 
 .User {
-  width: 30%;
+  width: 40%;
 }
 
 /*Intro*/
