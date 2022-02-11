@@ -153,7 +153,7 @@ nav a {
   height: 100vh;
 }
 video {
-  width: 80%;
+  width: 100%;
 }
 /*About*/
 
@@ -286,7 +286,7 @@ footer {
   width: 100%;
   height: calc(100vh - 120px);
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -325,11 +325,12 @@ footer {
   display: flex;
   width: 100%;
   justify-content: center;
+  padding-bottom: 200px;
 }
-.Pattern div {
-  background-color: #000000;
-  margin: 50px;
+
+.Pattern video {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  margin: 0 30px;
 }
