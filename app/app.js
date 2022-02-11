@@ -4,6 +4,7 @@ import "./components/sketches/random_lines";
 import "./components/sketches/cat";
 import "./components/sketches/small_ellipses";
 import "./components/sketches/rectangles";
+import "./components/sketches/bezier";
 
 import { sketches, switchSketch } from "./components/sketches";
 import { init, setCanvasTexture } from "./components/renderer";
@@ -46,7 +47,7 @@ function createSwitcher() {
     element.id = e.name.replace(/\s/g, "");
     element.value = i;
     switcherContainer.appendChild(element);
-    if (currentSketch == e) {
+    if (currentSketch === e) {
       element.selected = true;
     }
     element.addEventListener("click", function () {
