@@ -4,7 +4,7 @@ const swirling = {
   name: "Swirling",
   sketch: (sketch) => {
     var noiseScale = 100;
-    var n = 500;
+    var n = 1000;
 
     var particles = [];
 
@@ -64,6 +64,11 @@ const swirling = {
         sketch.point(p.pos.x, p.pos.y);
       }
       noiseImg.updatePixels();
+    };
+
+    sketch.mousePressed = () => {
+      sketch.noiseSeed(sketch.random(0, 1000));
+      //sketch.noLoop();
     };
 
     function genNoiseImg() {
