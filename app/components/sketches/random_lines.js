@@ -2,7 +2,7 @@ import {
   sketches,
   sketchWidth,
   createControl,
-  sketchHeight
+  sketchHeight,
 } from "../sketches";
 
 //  Sketch 4
@@ -66,7 +66,7 @@ const randomLines = {
     const setupResetControl = () => {
       let element = document.createElement("a");
       createControl(element, false, {
-        class: "button"
+        class: "button",
       });
       element.innerHTML = "Reset";
 
@@ -83,7 +83,7 @@ const randomLines = {
         min: 1,
         max: 2000,
         step: 1,
-        value: quantity
+        value: quantity,
       });
 
       element.addEventListener("input", () => {
@@ -98,6 +98,6 @@ const randomLines = {
       lines = [];
       createLines(quantity);
     };
-  }
+  },
 };
 sketches.push(randomLines);

@@ -1,7 +1,12 @@
-import { sketches, sketchWidth, sketchHeight } from "../sketches";
+import {
+  sketches,
+  sketchWidth,
+  createControl,
+  sketchHeight,
+} from "../sketches";
 
-const swirling = {
-  name: "Swirling",
+const particles = {
+  name: "particles",
   sketch: (sketch) => {
     var noiseScale = 100;
     var n = 1000;
@@ -94,6 +99,18 @@ const swirling = {
       console.log(noiseImg);
       noiseImg.updatePixels();
     }
+
+    const setupResetControl = () => {
+      let element = document.createElement("a");
+      createControl(element, false, {
+        class: "button",
+      });
+      element.innerHTML = "Reset";
+
+      element.addEventListener("click", () => {
+        resetSketch();
+      });
+    };
   },
 };
-sketches.push(swirling);
+sketches.push(particles);

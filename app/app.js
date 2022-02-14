@@ -3,7 +3,7 @@ import "./components/sketches/lines";
 import "./components/sketches/random_lines";
 import "./components/sketches/cat";
 import "./components/sketches/small_ellipses";
-import "./components/sketches/rectangles";
+import "./components/sketches/particles";
 import "./components/sketches/bezier";
 
 import { sketches, switchSketch } from "./components/sketches";
