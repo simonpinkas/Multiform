@@ -15,8 +15,8 @@ export const init = () => {
   });
 
   renderer.setSize(
-    rendererElement.clientWidth,
-    rendererElement.clientHeight
+    rendererElement.clientWidth - 400,
+    rendererElement.clientHeight - 160
   );
 
   // CAMERA
@@ -27,7 +27,7 @@ export const init = () => {
     5000
   );
 
-  camera.position.set(-1, 0, 2.5);
+  camera.position.set(0, 0, 2);
 
   // SCENE
   scene = new THREE.Scene();
@@ -45,7 +45,7 @@ export const init = () => {
     model,
     (gltf) => {
       gltf.scene.position.set(0, 0, 0);
-      gltf.scene.scale.set(3, 3, 3);
+      gltf.scene.scale.set(2.3, 2.3, 2);
       scene.add(gltf.scene);
       setMaterialsOnGLTF(gltf.scene);
     },
